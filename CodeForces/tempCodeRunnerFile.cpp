@@ -3,18 +3,21 @@ using namespace std;
 
 int main() {
 
-    string s1 , s2 , result ;
-    cin >> s1 >> s2;
+    int n , k;
+    cin >> n >> k;
 
-    for(int i = 0 ; i < s1.length(); i++){
-        if(s1[i] == '1' && s2[i] == '0' || s1[i] == '0' && s2[i] == '1' ){
-            result[i] = '1';
-        }else{
-            result[i] = '0';
+    bool check = false ;
+    vector <int > a(n);
+
+    for( int i = 0; i < n; i++ ){
+        cin>>a[i];
+        if(a[i] == k){
+            check = true;
         }
     }
+
+    cout << (!check ? "Yes" : "No") << endl;
     
-    cout << result << endl;
 
     return 0;
 }
