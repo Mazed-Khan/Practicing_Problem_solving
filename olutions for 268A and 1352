@@ -1,0 +1,33 @@
+[1mdiff --git a/Codeforces-800-Rating/268A_games.cpp b/Codeforces-800-Rating/268A_games.cpp[m
+[1mindex e69de29..0efe722 100644[m
+[1m--- a/Codeforces-800-Rating/268A_games.cpp[m
+[1m+++ b/Codeforces-800-Rating/268A_games.cpp[m
+[36m@@ -0,0 +1,27 @@[m
+[32m+[m[32m#include <bits/stdc++.h>[m
+[32m+[m[32musing namespace std;[m
+[32m+[m
+[32m+[m[32mint main() {[m
+[32m+[m[32m    int n;[m
+[32m+[m[32m    cin >> n;[m
+[32m+[m
+[32m+[m[32m    vector<int> home(n), guest(n);[m
+[32m+[m
+[32m+[m[32m    for (int i = 0; i < n; i++) {[m
+[32m+[m[32m        cin >> home[i] >> guest[i];[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    int ans = 0;[m
+[32m+[m
+[32m+[m[32m    for (int i = 0; i < n; i++) {[m
+[32m+[m[32m        for (int j = 0; j < n; j++) {[m
+[32m+[m[32m            if (i != j && home[i] == guest[j]) {[m
+[32m+[m[32m                ans++;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    cout << ans << endl;[m
+[32m+[m
+[32m+[m[32m    return 0;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
