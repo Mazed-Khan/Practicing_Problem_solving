@@ -7,16 +7,16 @@ int main(){
     cin >> t;
 
     while(t--){
-        int n ;
+        long long n ;
         cin >> n ;
 
-        int div_four = n / 4 ;
-        int div_six = n / 6;
+        long long div_four = n / 4 ;
+        long long div_six = (n + 5) / 6;
 
-        if(n % 2 == 1){
+        if(n < 4 || n % 2 == 1){
             cout << -1 << endl;
         }else{
-            cout << min(div_four,div_six) <<" " <<max(div_four,div_six);
+            cout << div_six << " " << div_four << endl;
         }
     }
     
