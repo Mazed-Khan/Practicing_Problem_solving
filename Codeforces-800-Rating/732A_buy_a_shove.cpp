@@ -12,6 +12,7 @@ int main() {
             break;
         }
     }
+    // Find the smallest count i of k-priced shovels whose total ends in 0 or r (so no change is needed), using i from 1 to 10.
 
     return 0;
 }
