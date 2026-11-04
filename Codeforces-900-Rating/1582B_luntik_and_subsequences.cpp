@@ -25,6 +25,7 @@ int main(){
         }
         long long ways = pow(2, zeros) * ones;
         cout<< ways<< endl;
+        // Each 0 can be freely included or excluded (2^zeros subsets), and we must pick at least one 1 as the "special" element, so the count is 2^zeros * ones.
     }
 
     return 0;
